@@ -25,6 +25,7 @@ async function main(args) {
   const contentType = args.content_type;
 
   if (!fileName || !contentType) {
+    console.log('missing file_name or content_type')
     return {
       statusCode: 400,
       body: {
@@ -56,6 +57,7 @@ async function main(args) {
         resolve(data);
       })
     })
+    console.log(`Successfully signed payload for ${signedPayload.url}/${signedPayload.fields.key}`)
 
     return {
       statusCode: 200,
