@@ -14,7 +14,7 @@ spec:
         branch: main
         repo_clone_url: https://github.com/ddebarros/sample-functions-file-upload.git
       source_dir: "/"
-      env_vars: 
+      envs: 
         - key: SPACES_ENDPOINT
           value: <REPLACE_ME>
         - key: SPACES_NAME
