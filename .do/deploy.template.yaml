@@ -1,0 +1,18 @@
+spec:
+  name: sample-functions-file-upload
+  static-sites:
+    - name: site
+      git:
+        branch: main
+        repo_clone_url: https://github.com/ddebarros/sample-functions-file-upload.git
+      source_dir: "/public"
+      routes: 
+        - path: '/'
+  functions:
+    - name: functions-api
+      git:
+        branch: main
+        repo_clone_url: https://github.com/ddebarros/sample-functions-file-upload.git
+      source_dir: "/"
+      routes: 
+        - path: '/api'
