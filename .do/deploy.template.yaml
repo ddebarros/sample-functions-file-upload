@@ -14,5 +14,14 @@ spec:
         branch: main
         repo_clone_url: https://github.com/ddebarros/sample-functions-file-upload.git
       source_dir: "/"
+      env_vars: 
+        - key: SPACES_ENDPOINT
+          value: <REPLACE_ME>
+        - key: SPACES_NAME
+          value: <REPLACE_ME>
+        - key: SPACES_NAME
+          value: <REPLACE_ME>
+        - key: SPACES_SECRET
+          value: <REPLACE_ME>
       routes: 
         - path: '/api'
