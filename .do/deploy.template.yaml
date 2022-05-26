@@ -1,6 +1,6 @@
 spec:
   name: sample-functions-file-upload
-  static-sites:
+  static_sites:
     - name: site
       git:
         branch: main
