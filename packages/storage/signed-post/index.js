@@ -11,6 +11,7 @@ const s3 = new AWS.S3({
 })
 
 async function main(args) {
+  console.log(process.env)
   if (args.__ow_method == "options") {
     return {
       headers: {
